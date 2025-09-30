@@ -1,0 +1,37 @@
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-header {
+  background: #001529;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  color: white;
+  margin: 0;
+  font-weight: 600;
+}
+
+.app-content {
+  padding: 24px;
+  background: #f0f2f5;
+}
+
+.main-tabs {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-tabs .ant-tabs-tab {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-tabs .ant-tabs-content-holder {
+  padding: 24px 0;
+}

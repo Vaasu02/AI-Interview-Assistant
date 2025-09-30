@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom styles for the interview app */
+.chat-interface {
+  height: 100%;
+}
+
+.chat-messages {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #d9d9d9;
+}
+
+.message-item.ai {
+  background: #e6f7ff;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.message-item.user {
+  background: #f6ffed;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.message-item.system {
+  background: #fff7e6;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.resume-upload .ant-upload-drag {
+  border: 2px dashed #d9d9d9;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.resume-upload .ant-upload-drag:hover {
+  border-color: #1890ff;
+  background: #f0f9ff;
+}
+
+.candidate-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+}
+
+.question-timer {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-content {
+    padding: 12px;
+  }
+  
+  .main-tabs {
+    padding: 8px;
+  }
+  
+  .chat-messages {
+    height: 300px;
+  }
+}
