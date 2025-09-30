@@ -40,31 +40,31 @@ A comprehensive React application that serves as an AI-powered interview assista
 ## Installation
 
 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd ai-interview-assistant
-\`\`\`
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Set up environment variables:
-\`\`\`bash
+```bash
 # Create .env file
 echo "VITE_GEMINI_API_KEY=your_gemini_api_key_here" > .env
-\`\`\`
+```
 
 4. Get your Gemini API key:
    - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
    - Generate an API key
-   - Replace \`your_gemini_api_key_here\` in the .env file
+   - Replace `your_gemini_api_key_here` in the .env file
 
 5. Start the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ## Usage
 
@@ -93,23 +93,6 @@ npm run dev
 - **Routing**: React Router DOM
 - **Notifications**: React Toastify
 
-## Project Structure
-
-\`\`\`
-src/
-├── components/
-│   ├── Layout/           # App layout and navigation
-│   ├── Interviewee/      # Candidate-facing components
-│   ├── Interviewer/      # Interviewer dashboard components
-│   └── Modals/           # Modal components
-├── store/
-│   └── slices/           # Redux slices for state management
-├── utils/
-│   ├── geminiAI.js       # AI service integration
-│   └── resumeParser.js   # Resume parsing utilities
-└── App.jsx               # Main application component
-\`\`\`
-
 ## Key Features Explained
 
 ### Resume Parsing
@@ -136,14 +119,32 @@ src/
 - Welcome back modal for interrupted interviews
 - Complete interview history preservation
 
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Layout/           # App layout and navigation
+│   ├── Interviewee/      # Candidate-facing components
+│   ├── Interviewer/      # Interviewer dashboard components
+│   └── Modals/           # Modal components
+├── store/
+│   └── slices/           # Redux slices for state management
+├── utils/
+│   ├── geminiAI.js       # AI service integration
+│   └── resumeParser.js   # Resume parsing utilities
+└── App.jsx               # Main application component
+```
+
 ## Development
 
 ### Available Scripts
-- \`npm run dev\` - Start development server
-- \`npm run build\` - Build for production
-- \`npm run preview\` - Preview production build
-- \`npm run lint\` - Run ESLint
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
 ### Environment Variables
-- \`VITE_GEMINI_API_KEY\` - Your Google Gemini AI API key
+- `VITE_GEMINI_API_KEY` - Your Google Gemini AI API key
+
 
