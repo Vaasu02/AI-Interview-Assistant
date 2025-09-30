@@ -136,15 +136,5 @@ src/
 └── App.jsx               # Main application component
 ```
 
-## Development
-
-### Available Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-
-### Environment Variables
-- `VITE_GEMINI_API_KEY` - Your Google Gemini AI API key
 
 
